@@ -1,0 +1,41 @@
+sort1 uses: Bubble sort
+
+How do you know?:
+When tested on sorted data (which sorted from smallest to largest, therefore
+no swap needed), it got faster real time compare to sort3. And based on all the
+test result of sort2, i can assume that sort2 is a merge sort algorithm as its
+got fastest time in most cases compare to sort1 and sort3.
+
+sort2 uses: Merge sort
+
+How do you know?:
+For the upper bound and lower bound test cases, sort2 got almost similar time
+which one of the characteristic of Merge sort (O(n log n) for upper bound and
+Ω(n log n) for lower bound), also from all the test case results, sort2 got
+the fastest time in most cases compare to other programs.
+
+sort3 uses: Selection sort
+
+How do you know?:
+When tested on sorted data (from largest to smallest), it still got similar time
+when tested on reversed cases. Also, when compared with sort1 at sorted test cases,
+it is the slowest, so i can determine that sort3 is a selection sort algorithm
+
+
+random 5000                 random 10000                random 50000
+------------------------------------------------------------------------
+sort 1 - 0.109s             sort 1 - 0.196s             sort 1 - 6.244s
+sort 2 - 0.063s             sort 2 - 0.045s             sort 2 - 0.517s
+sort 3 - 0.045s             sort 3 - 0.091s             sort 3 - 2.646s
+
+reversed 5000               reversed 10000              reversed 50000
+------------------------------------------------------------------------
+sort 1 - 0.084s             sort 1 - 0.239s             sort 1 - 5.339s
+sort 2 - 0.032s             sort 2 - 0.064s             sort 2 - 0.571s
+sort 3 - 0.046s             sort 3 - 0.209s             sort 3 - 2.810s
+
+sorted 5000                 sorted 10000                sorted 50000
+------------------------------------------------------------------------
+sort 1 - 0.024s             sort 1 - 0.081s             sort 1 - 0.503s
+sort 2 - 0.026s             sort 2 - 0.046s             sort 2 - 0.548s
+sort 3 - 0.060s             sort 3 - 0.149s             sort 3 - 2.608
